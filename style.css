@@ -1,0 +1,168 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #5A3F37, #D9787D);
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header .nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+header .nav-list li {
+    list-style-type: none;
+}
+
+header .nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+header .nav-list a:hover {
+    color: #FF6347;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 span {
+    color: #FF6347;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    color: #FF6347;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
+}
+
+footer p {
+    color: #ddd;
+}
+
+footer a {
+    color: #FF6347;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

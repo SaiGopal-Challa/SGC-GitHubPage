@@ -1,13 +1,3 @@
-// Carousel logic
-let currentSlide = 0;
-const slides = document.querySelectorAll(".carousel-slide");
-
-setInterval(() => {
-    slides[currentSlide].style.display = "none";
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].style.display = "block";
-}, 5000);
-
 // Chart.js: Donut Chart
 const ctx = document.getElementById("skillChart").getContext("2d");
 const skillChart = new Chart(ctx, {

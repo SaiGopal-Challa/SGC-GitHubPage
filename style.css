@@ -1,0 +1,47 @@
+/* Base layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1E3C72, #2A5298);
+    color: #EAEAEA;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Hero carousel styling */
+.hero {
+    position: relative;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-carousel {
+    animation: slide 15s infinite;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide:nth-child(1) {
+    display: block;
+}
+
+.chart-container {
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/* Skills styling */
+.skills-list .skill {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.skills-list .skill i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #FFD700;
+}

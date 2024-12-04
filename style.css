@@ -1,47 +1,157 @@
-/* Base layout */
+/* General Body */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #1E3C72, #2A5298);
-    color: #EAEAEA;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-/* Hero carousel styling */
+/* Hero Section */
 .hero {
-    position: relative;
-    padding: 50px 20px;
+    background: linear-gradient(135deg, #FF6384, #FFCE56);
+    color: white;
+    padding: 100px 0;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-carousel {
-    animation: slide 15s infinite;
+.hero h1 {
+    font-size: 3em;
+    font-weight: 700;
 }
 
-.carousel-slide {
-    display: none;
+.hero .role {
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
-.carousel-slide:nth-child(1) {
-    display: block;
+.hero .intro {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero .btn-main {
+    padding: 10px 20px;
+    background-color: #4BC0C0;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-main:hover {
+    background-color: #36A2EB;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.skills .section-heading {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
 }
 
 .chart-container {
-    margin: 20px auto;
-    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Skills styling */
-.skills-list .skill {
-    display: inline-block;
-    width: 150px;
+/* Work Experience Section */
+.experience {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+}
+
+.experience .section-heading {
+    font-size: 2.5em;
+    color: #333;
     text-align: center;
-    margin: 10px;
-    animation: fadeInUp 1.5s ease-out;
+    margin-bottom: 40px;
 }
 
-.skills-list .skill i {
-    font-size: 48px;
-    margin-bottom: 10px;
-    color: #FFD700;
+.job {
+    margin-bottom: 30px;
+}
+
+.job h3 {
+    font-size: 1.8em;
+    color: #36A2EB;
+}
+
+.job p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.job ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.projects .section-heading {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects ul {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+}
+
+.contact .section-heading {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.contact a {
+    color: #36A2EB;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }

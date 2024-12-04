@@ -3,115 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Developer Portfolio">
-    <title>SGC GitHub Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C Sai Gopal Challa - Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>C Sai Gopal Challa</h1>
+            <p class="role">Senior Software Developer</p>
+            <p class="intro"> 2 years of experience in leading projects and solving complex issues. Passionate about clean, efficient code.</p>
+            <a href="#contact" class="btn-main">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Skills Section with Donut Chart -->
+    <section class="skills" id="skills">
+        <h2 class="section-heading">Skills</h2>
+        <div class="chart-container">
+            <canvas id="skillChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="experience" id="experience">
+        <h2 class="section-heading">Work Experience</h2>
+        <div class="job">
+            <h3>Senior Software Developer | ICICI Lombard</h3>
+            <p><em>June 2023 - Current</em></p>
+            <ul>
+                <li>Designed reusable modules that expedited development.</li>
+                <li>Optimized performance by resolving bottlenecks.</li>
+                <li>Enhanced databases and algorithms to reduce processing time.</li>
             </ul>
-        </nav>
-        <div class="hero">
-            <div class="hero-carousel">
-                <div class="carousel-slide">
-                    <h1>Hello, I'm <span>Sai Gopal Challa</span></h1>
-                    <p>Developer | Open-Source Contributor | Innovator</p>
-                </div>
-                <div class="carousel-slide">
-                    <h1>5+ Years of Experience</h1>
-                    <p>Crafting scalable and high-performing solutions.</p>
-                </div>
-                <div class="carousel-slide">
-                    <h1>Projects & Contributions</h1>
-                    <p>40+ projects, 10+ open-source contributions.</p>
-                </div>
-            </div>
-            <div class="chart-container">
-                <canvas id="skillChart"></canvas>
-            </div>
         </div>
-    </header>
-
-    <section id="about">
-        <div class="section-title">
-            <h2>About Me</h2>
+        <div class="job">
+            <h3>Software Development Intern | Glance-Inmobi</h3>
+            <p><em>July 2022 - December 2022</em></p>
+            <ul>
+                <li>Built automated testing tools in collaboration with the team.</li>
+                <li>Debugged complex technical issues during development.</li>
+            </ul>
         </div>
-        <p>I am a passionate software developer specializing in modern web technologies, scalable backend systems, and open-source contributions.</p>
-    </section>
-
-    <section id="skills">
-        <div class="section-title">
-            <h2>Skills</h2>
-        </div>
-        <div class="skills-list">
-            <div class="skill">
-                <i class="devicon-java-plain colored"></i>
-                <h3>Java</h3>
-            </div>
-            <div class="skill">
-                <i class="devicon-csharp-plain colored"></i>
-                <h3>C#</h3>
-            </div>
-            <div class="skill">
-                <i class="devicon-dotnetcore-plain colored"></i>
-                <h3>.NET Core</h3>
-            </div>
-            <div class="skill">
-                <i class="devicon-html5-plain colored"></i>
-                <h3>HTML</h3>
-            </div>
-            <div class="skill">
-                <i class="devicon-css3-plain colored"></i>
-                <h3>CSS</h3>
-            </div>
-            <div class="skill">
-                <i class="devicon-javascript-plain colored"></i>
-                <h3>JavaScript</h3>
-            </div>
+        <div class="job">
+            <h3>ML Intern | StarMark Software</h3>
+            <p><em>May 2020 - July 2020</em></p>
+            <ul>
+                <li>Enhanced data quality by identifying and addressing inconsistencies.</li>
+                <li>Developed an ML model to analyze logs and detect issues.</li>
+            </ul>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="section-title">
-            <h2>Projects</h2>
-        </div>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A web application for task management.</p>
-                <a href="https://github.com/repo" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>API service for e-commerce platforms.</p>
-                <a href="https://github.com/repo" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-        <div class="github-stats">
-            <img src="https://github-readme-stats.vercel.app/api?username=yourgithubusername&show_icons=true&theme=radical" alt="GitHub Stats">
-        </div>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-heading">Projects</h2>
+        <ul>
+            <li>Portfolio website using MERN stack</li>
+            <li>Online examination portal for an NGO using DotNet Core and Angular</li>
+            <li>Camera app with gallery, 2048, and Snake Game app</li>
+        </ul>
     </section>
 
-    <section id="contact">
-        <div class="section-title">
-            <h2>Contact</h2>
-        </div>
-        <p>Feel free to reach out to me via <a href="mailto:saigopal.challa@gmail.com">email</a></p>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-heading">Contact</h2>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/saigopal-challa" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/SaiGopal-Challa" target="_blank">GitHub Profile</a></p>
+        <p>Portfolio: <a href="https://saigopalchalla.in" target="_blank">My Portfolio</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 SGC. All Rights Reserved.</p>
+        <p>&copy; 2024 C Sai Gopal Challa. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+
+1. Need to modify the hero section. ( chart and content in a single slide )
+
+2. Solidify the chart, ( make two layers, { one internal circle and one external donut charts } and one will have skills, framworks, tools and the other will have experiences or something quantifiable.
+
+3. Make the objects 3D and also give them shadow effect. 
+
